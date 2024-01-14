@@ -1,0 +1,73 @@
+@import url("https://fonts.googleapis.com/css2?family=Cardo:ital,wght@0,400;0,700;1,400&family=Cinzel&family=Cormorant:ital,wght@1,300&family=Noto+Serif+Display:wght@200&family=Roboto:wght@400;700&display=swap");
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  overflow: hidden;
+  margin: 0;
+  background-color: lightgrey;
+}
+
+.container {
+  background-color: white;
+  height: 450px;
+  min-width: 600px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  gap: 2rem;
+  border-radius: 15px;
+}
+
+.game-btn {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 0.5rem;
+  width: 300px;
+  height: 100px;
+}
+
+.btn {
+  border: none;
+  background: none;
+  cursor: pointer;
+  font-size: 3rem;
+
+  transition: all 0.3s ease-in-out;
+}
+
+.btn:hover {
+  font-size: 4rem;
+  transition: all 0.2s ease-in-out;
+}
+
+#rock {
+  background-color: pink;
+  border-radius: 10px;
+}
+
+#paper {
+  background-color: purple;
+  border-radius: 10px;
+}
+
+#scissors {
+  background-color: green;
+  border-radius: 10px;
+}
+
+#scores {
+  font-size: 1.5rem;
+}
